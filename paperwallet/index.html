@@ -4708,6 +4708,7 @@ Bitcoin.Address = function (bytes) {
 	//var getvalue2 = parseInt(getvalue,10);	
 
 Bitcoin.Address.networkVersion = 135; // mainnet
+Bitcoin.ECKey.privateKeyPrefix = 151;
 
 /**
 * Serialize this object as a standard Bitcoin address.
@@ -5094,7 +5095,7 @@ Bitcoin.ECKey = (function () {
 	// var getvalue2 = parseInt(getvalue,10);
 	/// var getvalue3 = getvalue2 + 128;	
 	
-	ECKey.privateKeyPrefix = 151;
+	ECKey.privateKeyPrefix = 178; 
 
 	/**
 	* Whether public keys should be returned compressed by default.
